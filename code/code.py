@@ -53,12 +53,12 @@ class vm:
         elif inst == 4:
             b = self.get_value(self.txt[self.pc+2])
             c = self.get_value(self.txt[self.pc+3])
-            self.set_value(self.txt[self.pc+1],b==c)
+            self.set_value(self.txt[self.pc+1],int(b==c))
             self.pc += 4
         elif inst == 5:
             b = self.get_value(self.txt[self.pc+2])
             c = self.get_value(self.txt[self.pc+3])
-            self.set_value(self.txt[self.pc+1],b>c)
+            self.set_value(self.txt[self.pc+1],int(b>c))
             self.pc += 4
         elif inst == 6:
             a = self.txt[self.pc + 1]
@@ -84,16 +84,6 @@ class vm:
             b = self.get_value(self.txt[self.pc+2])
             c = self.get_value(self.txt[self.pc+3])
             self.set_value(self.txt[self.pc+1],b+c)
-            self.pc += 4
-        elif inst == 12:
-            b = self.get_value(self.txt[self.pc+2])
-            c = self.get_value(self.txt[self.pc+3])
-            self.set_value(self.txt[self.pc+1],b&c)
-            self.pc += 4
-        elif inst == 13:
-            b = self.get_value(self.txt[self.pc+2])
-            c = self.get_value(self.txt[self.pc+3])
-            self.set_value(self.txt[self.pc+1],b|c)
             self.pc += 4
         elif inst == 19:
             print(chr(self.txt[self.pc +1]), end='')
