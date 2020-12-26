@@ -19,6 +19,7 @@ class vm:
         self.txt = []
         self.terminated = False
         self.reg = [0] * 8
+        self.input = []
         with open(_file, 'rb') as f:
             b = f.read(2)
             while b != b'':
@@ -30,9 +31,9 @@ class vm:
              5: self.gt_5, 6: self.jmp_6, 7: self.jt_7, 8: self.jf_8, 9: self.add_9,
              10: self.mul_10, 11: self.mod_11, 12: self.and_12, 13: self.or_13, 14: self.not_14,
              15: self.rmem_15, 16: self.wmem_16, 17: self.call_17,
-             19: self.out_19, 21: self.noop_21}
+             18: self.ret_18, 19: self.out_19, 20: self.in_20, 21: self.noop_21}
 
-    def get_value(self, offset):
+    def get_value_by_offest(self, offset):
         param = self.txt[self.pc + offset]
         if param < 32768:
             return param
@@ -40,14 +41,21 @@ class vm:
             assert param <= 32775
             return self.reg[param - 32768]
 
-    def set_value(self, offset, value):
+    def get_value_by_address(self, add):
+        if add < 32768:
+            return add
+        else:
+            assert add <= 32775
+            return self.reg[add - 32768]
+
+    def set_value_by_offset(self, offset, value):
         add = self.txt[self.pc + offset]
         if add < 32768:
             self.txt[add] = value
         else:
             self.reg[add - 32768] = value
 
-    def set_address(self, add, value):
+    def set_value_by_address(self, add, value):
         if add < 32768:
             self.txt[add] = value
         else:
@@ -57,98 +65,111 @@ class vm:
         self.terminated = True
 
     def set_1(self):
-        self.set_value(1, self.get_value(2))
+        self.set_value_by_offset(1, self.get_value_by_offest(2))
         self.pc += 3
 
     def push_2(self):
-        a = self.get_value(1)
+        a = self.get_value_by_offest(1)
         self.stack.append(a)
         self.pc += 2
 
     def pop_3(self):
         val = self.stack.pop()
-        self.set_value(1, val)
+        self.set_value_by_offset(1, val)
         self.pc += 2
 
     def eq_4(self):
-        b = self.get_value(2)
-        c = self.get_value(3)
-        self.set_value(1, b == c)
+        b = self.get_value_by_offest(2)
+        c = self.get_value_by_offest(3)
+        self.set_value_by_offset(1, b == c)
         self.pc += 4
 
     def gt_5(self):
-        b = self.get_value(2)
-        c = self.get_value(3)
-        self.set_value(1, b > c)
+        b = self.get_value_by_offest(2)
+        c = self.get_value_by_offest(3)
+        self.set_value_by_offset(1, b > c)
         self.pc += 4
 
     def jmp_6(self):
-        self.pc = self.get_value(1)
+        self.pc = self.get_value_by_offest(1)
 
     def jt_7(self):
-        if self.get_value(1) != 0:
-            self.pc = self.get_value(2)
+        if self.get_value_by_offest(1) != 0:
+            self.pc = self.get_value_by_offest(2)
         else:
             self.pc += 3
 
     def jf_8(self):
-        if self.get_value(1) == 0:
-            self.pc = self.get_value(2)
+        if self.get_value_by_offest(1) == 0:
+            self.pc = self.get_value_by_offest(2)
         else:
             self.pc += 3
 
     def add_9(self):
-        b = self.get_value(2)
-        c = self.get_value(3)
-        self.set_value(1, (b+c) % 32768)
+        b = self.get_value_by_offest(2)
+        c = self.get_value_by_offest(3)
+        self.set_value_by_offset(1, (b+c) % 32768)
         self.pc += 4
 
     def mul_10(self):
-        b = self.get_value(2)
-        c = self.get_value(3)
-        self.set_value(1, (b*c) % 32768)
+        b = self.get_value_by_offest(2)
+        c = self.get_value_by_offest(3)
+        self.set_value_by_offset(1, (b*c) % 32768)
         self.pc += 4
 
     def mod_11(self):
-        b = self.get_value(2)
-        c = self.get_value(3)
-        self.set_value(1, b % c)
+        b = self.get_value_by_offest(2)
+        c = self.get_value_by_offest(3)
+        self.set_value_by_offset(1, b % c)
         self.pc += 4
 
     def and_12(self):
-        b = self.get_value(2)
-        c = self.get_value(3)
-        self.set_value(1, b & c)
+        b = self.get_value_by_offest(2)
+        c = self.get_value_by_offest(3)
+        self.set_value_by_offset(1, b & c)
         self.pc += 4
 
     def or_13(self):
-        b = self.get_value(2)
-        c = self.get_value(3)
-        self.set_value(1, b | c)
+        b = self.get_value_by_offest(2)
+        c = self.get_value_by_offest(3)
+        self.set_value_by_offset(1, b | c)
         self.pc += 4
 
     def not_14(self):
-        b = self.get_value(2)
-        self.set_value(1, ~b & 0x7fff)
+        b = self.get_value_by_offest(2)
+        self.set_value_by_offset(1, ~b & 0x7fff)
         self.pc += 3
 
     def rmem_15(self):
-        add = self.txt[self.get_value(2)]
-        self.set_value(1, add)
+        add = self.txt[self.get_value_by_offest(2)]
+        self.set_value_by_offset(1, add)
         self.pc += 3
 
     def wmem_16(self):
-        val = self.get_value(2)
-        self.set_address(self.txt[self.pc+1], val)
-        # TOFIX: write at address of mem no in mem
+        val = self.get_value_by_offest(2)
+        add = self.get_value_by_offest(1)
+        self.set_value_by_address(add, val)
         self.pc += 3
 
     def call_17(self):
         self.stack.append(self.pc + 2)
-        self.pc = self.get_value(1)
+        self.pc = self.get_value_by_offest(1)
+
+    def ret_18(self):
+        if len(self.stack) == 0:
+            self.terminated = True
+        else:
+            self.pc = self.stack.pop()
 
     def out_19(self):
-        print(chr(self.txt[self.pc + 1]), end='')
+        print(chr(self.get_value_by_offest(1)), end='')
+        self.pc += 2
+
+    def in_20(self):
+        if len(self.input) == 0:
+            self.input = list(input())
+            self.input.append('\n')
+        self.set_value_by_offset(1, ord(self.input.pop(0)))
         self.pc += 2
 
     def noop_21(self):
@@ -163,7 +184,6 @@ class vm:
         print()
         while not self.terminated:
             self.cycle()
-
 
 if __name__ == "__main__":
     obj = vm('input/challenge.bin')
