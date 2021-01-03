@@ -1,0 +1,426 @@
+
+
+Chiseled on the wall of one of the passageways, you see:
+
+    SzUPAhkZKROn
+
+You take note of this and keep walking.
+
+== Twisty passages ==
+You are in a maze of twisty little passages, all alike.
+
+Things of interest here:
+- can
+
+There is 1 exit:
+- west
+
+What do you do?
+
+
+Taken.
+
+What do you do?
+
+
+You fill your lantern with oil.  It seems to cheer up!
+
+
+What do you do?
+
+
+You light your lantern.
+
+== Twisty passages ==
+You are in a maze of twisty little passages, all alike.
+
+There is 1 exit:
+- west
+
+What do you do?
+
+--------------------------------------
+
+
+== Twisty passages ==
+You are in a maze of twisty little passages, all dimly lit by more bioluminescent moss.  There is a ladder here leading up.
+
+There are 5 exits:
+- ladder
+- north
+- south
+- east
+- west
+
+What do you do?
+
+--------------------------------------
+
+
+== Passage ==
+You are in a crevise on the west wall of the moss cavern.  A dark passage leads further west.  There is a ladder here which leads down into a smaller, moss-filled cavern below.
+
+There are 3 exits:
+- cavern
+- ladder
+- darkness
+
+What do you do?
+
+--------------------------------------
+
+
+== Twisty passages ==
+You are in a twisty maze of little passages, all alike.
+
+There are 3 exits:
+- north
+- south
+- west
+
+What do you do?
+
+--------------------------------------
+
+
+== Twisty passages ==
+You are in a maze of little twisty passages, all alike.
+
+There are 3 exits:
+- north
+- south
+- east
+
+What do you do?
+
+--------------------------------------
+
+
+== Twisty passages ==
+You are in a maze of alike little passages, all twisty.
+
+The passage to the east looks very dark; you think you hear a Grue.
+
+There are 4 exits:
+- north
+- south
+- west
+- east
+
+What do you do?
+
+--------------------------------------
+
+
+== Twisty passages ==
+You are in a little maze of twisty passages, all alike.
+
+There are 3 exits:
+- north
+- south
+- east
+
+What do you do?
+
+--------------------------------------
+
+
+== Moss cavern ==
+You are standing in a large cavern full of bioluminescent moss.  The cavern extends to the east.  There is a crevise in the rocks which opens into a passage.
+
+There are 2 exits:
+- east
+- passage
+
+What do you do?
+
+--------------------------------------
+
+
+== Passage ==
+You feel that your light source is more than sufficient to keep grues away.
+
+There are 2 exits:
+- continue
+- back
+
+What do you do?
+
+--------------------------------------
+
+
+== Twisty passages ==
+You are in a maze of alike twisty passages, all little.
+
+There are 3 exits:
+- north
+- east
+- south
+
+What do you do?
+
+--------------------------------------
+
+
+== Twisty passages ==
+You are in a twisty maze of little passages, all alike.
+
+There are 2 exits:
+- north
+- south
+
+What do you do?
+
+--------------------------------------
+
+
+== Twisty passages ==
+You are in a twisty alike of little passages, all maze.
+
+The east passage appears very dark; you feel likely to be eaten by a Grue.
+
+There are 4 exits:
+- north
+- south
+- west
+- east
+
+What do you do?
+
+--------------------------------------
+
+
+== Moss cavern ==
+You are standing in a large cavern full of bioluminescent moss.  It must have broken your fall!  The cavern extends to the east and west; at the west end, you think you see a passage leading out of the cavern.
+
+There are 2 exits:
+- west
+- east
+
+What do you do?
+
+--------------------------------------
+
+
+== Dark passage ==
+You are in a narrow passage.  There is darkness to the west, but you can barely see a glowing opening to the east.
+
+There are 2 exits:
+- west
+- east
+
+What do you do?
+
+--------------------------------------
+
+
+Chiseled on the wall of one of the passageways, you see:
+
+    SzUPAhkZKROn
+
+You take note of this and keep walking.
+
+== Twisty passages ==
+You are in a maze of twisty little passages, all alike.
+
+There is 1 exit:
+- west
+
+What do you do?
+
+--------------------------------------
+
+
+== Moss cavern ==
+You are standing in a large cavern full of bioluminescent moss.  The cavern extends to the west.
+
+There is 1 exit:
+- west
+
+What do you do?
+
+--------------------------------------
+
+
+== Dark passage ==
+You are in a dark, narrow passage.
+
+There are 2 exits:
+- east
+- west
+
+What do you do?
+
+--------------------------------------
+
+
+== Dark passage ==
+You are in a dark, narrow passage.  To the west, you spot some vegetation where the passage expands.
+
+There are 2 exits:
+- east
+- west
+
+What do you do?
+
+--------------------------------------
+
+
+== Ruins ==
+You stand in a large cavern with a huge ruin to the north, overgrown by plant life.  There is a large stone archway to the north acting as the doorway to the ruined complex.  A crevice in the rock to the east leads to an alarmingly dark passageway.
+
+There are 2 exits:
+- east
+- north
+
+What do you do?
+
+--------------------------------------
+
+
+== Ruins ==
+You are in the once-opulent foyer of a massive ruined complex.  There is a door to the south leading to the overgrowth outside and stairs to the north which lead into a larger hall.
+
+Things of interest here:
+- red coin
+
+There are 2 exits:
+- north
+- south
+
+What do you do?
+
+--------------------------------------
+
+
+== Ruins ==
+You stand in the massive central hall of these ruins.  The walls are crumbling, and vegetation has clearly taken over.  Rooms are attached in all directions.  There is a strange monument in the center of the hall with circular slots and unusual symbols.  It reads:
+
+_ + _ * _^2 + _^3 - _ = 399
+
+There are 4 exits:
+- north
+- south
+- east
+- west
+
+What do you do?
+
+--------------------------------------
+
+
+That door is locked.
+
+What do you do?
+
+--------------------------------------
+
+
+== Ruins ==
+You stand in what seems to have once been a dining hall; broken tables and pottery are scattered everywhere.  A staircase here leads down.
+
+Things of interest here:
+- concave coin
+
+There are 2 exits:
+- down
+- west
+
+What do you do?
+
+--------------------------------------
+
+
+== Ruins ==
+You find yourself in what was once the living quarters for the complex.  Many smaller rooms which once had walls to divide them now lay in disarray.  There is a staircase up here.
+
+Things of interest here:
+- blue coin
+
+There are 2 exits:
+- up
+- east
+
+What do you do?
+
+--------------------------------------
+
+
+== Ruins ==
+This seems to be a kitchen; there are brick stoves and shelves along the wall.  Everything here has fallen into disrepair.
+
+Things of interest here:
+- corroded coin
+
+There is 1 exit:
+- up
+
+What do you do?
+
+--------------------------------------
+
+
+== Ruins ==
+This was long ago a lavish throne room.  Dried-up fountains and crumbling statues line the walls, and the carved stone throne in the center of the room is falling apart.
+
+Things of interest here:
+- shiny coin
+
+There is 1 exit:
+- down
+
+What do you do?
+
+--------------------------------------
+***************************************
+
+
+can -> []
+
+
+You see no such item.
+
+What do you do?
+
+
+red coin -> ['west', 'ladder', 'darkness', 'continue', 'west', 'west', 'west', 'west', 'north', 'north', 'south']
+
+
+This coin is made of a red metal.  It has two dots on one side.
+
+What do you do?
+
+
+concave coin -> ['west', 'ladder', 'darkness', 'continue', 'west', 'west', 'west', 'west', 'north', 'north', 'south', 'north', 'east']
+
+
+This coin is slightly rounded, almost like a tiny bowl.  It has seven dots on one side.
+
+What do you do?
+
+
+blue coin -> ['west', 'ladder', 'darkness', 'continue', 'west', 'west', 'west', 'west', 'north', 'north', 'south', 'north', 'west']
+
+
+This coin is made of a blue metal.  It has nine dots on one side.
+
+What do you do?
+
+
+corroded coin -> ['west', 'ladder', 'darkness', 'continue', 'west', 'west', 'west', 'west', 'north', 'north', 'south', 'north', 'east', 'down']
+
+
+This coin is somewhat corroded.  It has a triangle on one side.
+
+What do you do?
+
+
+shiny coin -> ['west', 'ladder', 'darkness', 'continue', 'west', 'west', 'west', 'west', 'north', 'north', 'south', 'north', 'west', 'up']
+
+
+This coin is somehow still quite shiny.  It has a pentagon on one side.
+
+What do you do?
+
+
+blue coin, red coin, shiny coin, concave coin, corroded coin, 
